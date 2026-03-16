@@ -139,7 +139,7 @@ export default function Home() {
                   <li className="flex gap-3">
                     <span className="opacity-60">-</span>
                     <span>
-                      amd al/ml eng intern fall 2026 
+                      amd ai/ml eng intern fall 2026 
                     </span>
                   </li>
                 </ul>
