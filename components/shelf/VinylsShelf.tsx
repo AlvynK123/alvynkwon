@@ -23,7 +23,7 @@ export default function VinylsShelf() {
   return (
     <div>
       {/* small description */}
-      <p className="mb-5 text-[13px] opacity-70">
+      <p className="mb-5 text-[16px] opacity-70">
         albums on repeat at the moment
       </p>
 
@@ -40,10 +40,10 @@ export default function VinylsShelf() {
             </div>
 
             <div className="mt-3">
-              <div className="text-[13px] font-semibold leading-5">
+              <div className="text-[16px] font-medium leading-5">
                 {a.title}
               </div>
-              <div className="mt-1 text-[12px] opacity-60">
+              <div className="mt-1 font-mono text-[12px] opacity-60">
                 {a.artist}
               </div>
             </div>
@@ -52,14 +52,14 @@ export default function VinylsShelf() {
       </div>
 
       <div className="mt-8">
-        <div className="text-xs tracking-widest opacity-70">some specific songs</div>
-        <ul className="mt-4 space-y-1 text-[12px] leading-5">
+        <div className="font-mono text-[12px] font-medium tracking-[0.12em] opacity-70">some specific songs</div>
+        <ul className="mt-4 space-y-1 text-[14px] leading-6">
         {otherSongs.map((f) => (
             <li key={f.title} className="flex gap-3">
             <span className="opacity-60">-</span>
             <div className="flex items-baseline gap-2">
                 <span className="opacity-90">{f.title}</span>
-                <span className="text-[11px] opacity-50">{f.year}</span>
+                <span className="font-mono text-[11px] opacity-50">{f.year}</span>
             </div>
             </li>
         ))}

@@ -26,8 +26,8 @@
 
   /* Reduce header name size significantly */
   header h1 {
-    font-size: 0.875rem !important;
-    line-height: 1.2 !important;
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
     word-break: break-word !important;
   }
 
@@ -112,7 +112,7 @@
   }
 
   section button {
-    font-size: 0.7rem !important;
+    font-size: 0.75rem !important;
     padding: 0.25rem 0 !important;
   }
 
@@ -133,12 +133,12 @@
   /* Adjust text sizes in about/projects sections for mobile readability */
   #about,
   #projects {
-    font-size: 0.8125rem !important;
+    font-size: 1rem !important;
   }
 
   #about > div,
   #projects > div {
-    font-size: 0.8125rem !important;
+    font-size: 1rem !important;
   }
 
   /* Ensure proper spacing for list items on mobile */
@@ -162,9 +162,9 @@
     max-width: 100% !important;
   }
 
-  /* Section headers - reduce size */
-  div[class*="text-xs"][class*="font-semibold"] {
-    font-size: 0.7rem !important;
+  #about > div:first-child,
+  #projects > div:first-child {
+    font-size: 0.75rem !important;
   }
 
   /* Ensure images don't cause overflow */
@@ -173,4 +173,3 @@
     height: auto !important;
   }
 }
-

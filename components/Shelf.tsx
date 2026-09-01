@@ -14,7 +14,7 @@ export default function Shelf() {
     <section id="shelf" className="mt-20">
       <div className="mx-auto max-w-6xl px-6">
         {/* Tabs */}
-        <div className="flex items-center gap-12 text-xs tracking-widest">
+        <div className="flex items-center gap-12 font-mono text-[12px] tracking-[0.12em]">
           <button
             type="button"
             onClick={() => setTab("literature")}

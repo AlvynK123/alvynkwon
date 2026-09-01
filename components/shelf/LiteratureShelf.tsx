@@ -5,7 +5,7 @@ export default function LiteratureShelf() {
       { title: "On Earth We're Briefly Gorgeous", author: "Ocean Vuong", src: "/books/on.jpg" },
       { title: "Mysterious Island", author: "Jules Verne", src: "/books/mi.png" },
     ];
-  
+
     const otherBooks = [
         { title: "The Sympathizer", year: "Viet Thanh Nguyen" },
         { title: "The Joy Luck Club", year: "Amy Tan" },
@@ -21,7 +21,7 @@ export default function LiteratureShelf() {
       <div>
 
       {/* small description */}
-      <p className="mb-5 text-[13px] opacity-70">
+      <p className="mb-5 text-[16px] opacity-70">
         some of my favorite books
       </p>
       
@@ -38,8 +38,8 @@ export default function LiteratureShelf() {
               </div>
   
               <div className="mt-3">
-                <div className="text-[13px] font-semibold leading-5">{b.title}</div>
-                <div className="mt-1 text-[12px] opacity-60">{b.author}</div>
+                <div className="text-[16px] font-medium leading-5">{b.title}</div>
+                <div className="mt-1 font-mono text-[12px] opacity-60">{b.author}</div>
               </div>
             </div>
           ))}
@@ -47,14 +47,14 @@ export default function LiteratureShelf() {
 
     {/* other list */}
       <div className="mt-3">
-        <div className="text-xs tracking-widest opacity-70">other books</div>
-        <ul className="mt-4 space-y-1 text-[12px] leading-5">
+        <div className="font-mono text-[12px] font-medium tracking-[0.12em] opacity-70">other books</div>
+        <ul className="mt-4 space-y-1 text-[14px] leading-6">
         {otherBooks.map((f) => (
             <li key={f.title} className="flex gap-3">
             <span className="opacity-60">-</span>
             <div className="flex items-baseline gap-2">
                 <span className="opacity-90">{f.title}</span>
-                <span className="text-[11px] opacity-50">{f.year}</span>
+                <span className="font-mono text-[11px] opacity-50">{f.year}</span>
             </div>
             </li>
         ))}
@@ -63,4 +63,3 @@ export default function LiteratureShelf() {
       </div>
     );
   }
-  

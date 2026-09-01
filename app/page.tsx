@@ -60,10 +60,10 @@ export default function Home() {
         {/* Header */}
         <header className="flex items-center justify-between">
           {/* Name */}
-          <h1 className="font-semibold tracking-wide">ALVYN&nbsp;KWON</h1>
+          <h1 className="font-mono text-[17px] font-semibold tracking-[0.08em]">Alvyn&nbsp;Kwon</h1>
 
           {/* Navigation */}
-          <nav className="flex gap-8 text-sm">
+          <nav className="flex gap-8 font-mono text-[13px] font-medium tracking-[0.06em]">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -100,15 +100,15 @@ export default function Home() {
         <section className="mt-20 grid gap-16 md:grid-cols-2">
           {/* ABOUT ME */}
           <div id="about" className="scroll-mt-24">
-            <div className="text-xs font-semibold tracking-widest opacity-80">
+            <div className="font-mono text-[12px] font-semibold tracking-[0.14em] opacity-80">
               ABOUT ME
             </div>
             {/* line under header - matches footer style */}
             <div className="mt-3 border-t border-[#2E3A59]/67" />
 
-            <div className="mt-6 text-[13px] leading-6 opacity-90">
+            <div className="mt-6 text-[16px] leading-7 opacity-90">
               <div className="mb-8">
-                <div className="mb-3 text-xs tracking-widest opacity-70">
+                <div className="mb-3 font-mono text-[12px] font-medium tracking-[0.12em] opacity-70">
                   // NOW //
                 </div>
                 <ul className="space-y-2">
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               <div className="mb-8">
-                <div className="mb-3 text-xs tracking-widest opacity-70">
+                <div className="mb-3 font-mono text-[12px] font-medium tracking-[0.12em] opacity-70">
                   // PREVIOUSLY //
                 </div>
                 <ul className="space-y-2">
@@ -158,7 +158,7 @@ export default function Home() {
                           swe intern @ samsung - ecommerce platform team
                         </div>
 
-                        <div className="mt-1 text-xs opacity-60">
+                        <div className="mt-1 font-mono text-[12px] leading-5 opacity-60">
                           metrics dashboards · ci/cd infrastructure · ml anomaly detection
                         </div>
                       </div>
@@ -179,7 +179,7 @@ export default function Home() {
               </div>
 
               <div>
-                <div className="mb-3 text-xs tracking-widest opacity-70">
+                <div className="mb-3 font-mono text-[12px] font-medium tracking-[0.12em] opacity-70">
                   // INTERESTS //
                 </div>
                 <ul className="space-y-1">
@@ -220,24 +220,24 @@ export default function Home() {
 
           {/* PROJECTS */}
           <div id="projects" className="scroll-mt-24">
-            <div className="text-xs font-semibold tracking-widest opacity-80">
+            <div className="font-mono text-[12px] font-semibold tracking-[0.14em] opacity-80">
               PROJECTS
             </div>
             {/* line under header - matches footer style */}
             <div className="mt-3 border-t border-[#2E3A59]/67" />
 
-            <div className="mt-6 text-[13px] leading-6 opacity-90">
+            <div className="mt-6 text-[16px] leading-7 opacity-90">
               <ul className="space-y-8">
                 <li>
                 <a
                   href="https://critique.gatech.edu/" // <-- replace with real URL
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
+                  className="font-medium underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
                 >
                   course critique
                 </a>
-                  <div className="mt-2 text-xs opacity-70">
+                  <div className="mt-2 font-mono text-[12px] leading-5 opacity-70">
                   platform · course discovery + GPA data · under Student Gov Association
                   </div>
                   <div className="mt-4 border-t border-dashed border-[#2E3A59]/30" />
@@ -247,11 +247,11 @@ export default function Home() {
                   href="https://www.magnidia.com/" // <-- replace with real URL
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
+                  className="font-medium underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
                   >
                     magnidia
                   </a>
-                  <div className="mt-2 text-xs opacity-70">
+                  <div className="mt-2 font-mono text-[12px] leading-5 opacity-70">
                   event management site · full stack · web dev @ GT
                   </div>
                   <div className="mt-4 border-t border-dashed border-[#2E3A59]/30" />
@@ -261,11 +261,11 @@ export default function Home() {
                   href="/pdfs/finalreport.pdf" // <-- replace with real URL
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
+                  className="font-medium underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
                   >
                     fake ecommerce review prediction model 
                   </a>
-                  <div className="mt-2 text-xs opacity-70">
+                  <div className="mt-2 font-mono text-[12px] leading-5 opacity-70">
                   pytorch · scikit-learn · kaggle · machine learning
                   </div>
                   <div className="mt-4 border-t border-dashed border-[#2E3A59]/30" />
@@ -275,11 +275,11 @@ export default function Home() {
                   href="https://github.com/AlvynK123/PhaseIV_4400" // <-- replace with real URL
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
+                  className="font-medium underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
                   >
                     airline management GUI
                   </a>
-                  <div className="mt-2 text-xs opacity-70">
+                  <div className="mt-2 font-mono text-[12px] leading-5 opacity-70">
                   sql · next.js · database query · full stack
                   </div>
                   <div className="mt-4 border-t border-dashed border-[#2E3A59]/30" />
@@ -289,11 +289,11 @@ export default function Home() {
                   href="https://sites.google.com/view/wrappify/home" // <-- replace with real URL
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
+                  className="font-medium underline underline-offset-4 decoration-[#4A5D82] hover:opacity-70"
                   >
                     wrappify
                   </a>
-                  <div className="mt-2 text-xs opacity-70">
+                  <div className="mt-2 font-mono text-[12px] leading-5 opacity-70">
                   django · postgresql · full stack · spotify api
                   </div>
                   <div className="mt-4 border-t border-dashed border-[#2E3A59]/30" />
@@ -317,7 +317,7 @@ export default function Home() {
           <div className="border-t border-[#2E3A59]/67" />
 
           {/* Footer content */}
-          <div className="mt-4 flex items-center justify-between text-xs">
+          <div className="mt-4 flex items-center justify-between font-mono text-[12px]">
             {/* Left */}
             <div className="flex gap-6">
               <a
